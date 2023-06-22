@@ -1,7 +1,4 @@
 .home-container {
-  background-image: url(../../../assets/bg/bg.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url(../../../assets/bg/bg.jpg) center / cover no-repeat;
   height: 100vh;
 }
