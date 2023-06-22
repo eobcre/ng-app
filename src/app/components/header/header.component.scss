@@ -1,0 +1,19 @@
+$bg-base: #34c7f2;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bg-base;
+  padding: 0 20px;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+
+  li {
+    margin-left: 1rem;
+  }
+}
