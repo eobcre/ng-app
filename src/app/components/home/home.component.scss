@@ -8,4 +8,31 @@
   margin: 0 auto;
   max-width: 600px;
   width: 100%;
+
+  h1 {
+    font-size: 3rem;
+    padding-top: 5.5rem;
+  }
+
+  p {
+    padding-top: 1rem;
+  }
+}
+
+.card {
+  margin: 3rem auto 0;
+  width: 380px;
+  height: 320px;
+}
+
+@media (min-width: 640px) {
+  .card {
+    width: 580px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 600px;
+  }
 }
