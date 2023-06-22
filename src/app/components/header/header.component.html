@@ -1,1 +1,11 @@
-<p>header works!</p>
+<header>
+  <img src="{{ logoPath }}" alt="Logo" width="50" />
+  <nav>
+    <ul>
+      <li><a (click)="smoothScroll('about')">About</a></li>
+      <li><a (click)="smoothScroll('work')">My Work</a></li>
+      <li><a (click)="smoothScroll('contact')">Contact</a></li>
+      <li>Resume</li>
+    </ul>
+  </nav>
+</header>
