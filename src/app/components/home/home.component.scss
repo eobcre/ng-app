@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+$font-base: "Montserrat", sans-serif;
+$font-color: #303030;
+
+* {
+  font-family: $font-base;
+  color: $font-color;
+  text-transform: uppercase;
+}
+
 .home-container {
   background: url(../../../assets/bg/bg.jpg) center / cover no-repeat;
   height: 100vh;
@@ -10,11 +21,12 @@
   width: 100%;
 
   h1 {
-    font-size: 3rem;
-    padding-top: 5.5rem;
+    font-size: 2.4rem;
+    padding-top: 7rem;
   }
 
   p {
+    font-size: 0.9rem;
     padding-top: 1rem;
   }
 }
@@ -26,12 +38,34 @@
 }
 
 @media (min-width: 640px) {
+  .home-inner {
+    h1 {
+      font-size: 3.3rem;
+      padding-top: 6rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
   .card {
     width: 580px;
   }
 }
 
 @media (min-width: 768px) {
+  .home-inner {
+    h1 {
+      font-size: 4.3rem;
+      padding-top: 5.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
   .card {
     width: 600px;
   }
