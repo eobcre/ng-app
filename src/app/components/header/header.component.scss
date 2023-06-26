@@ -1,5 +1,4 @@
-$font-base: "Bebas Neue", sans-serif;
-$shadow-pink: rgb(215, 78, 122);
+@import "../../../styles.scss";
 
 header {
   display: flex;
@@ -14,8 +13,9 @@ header {
 ul {
   display: flex;
   list-style: none;
-  font-family: $font-base;
+  font-family: $font-label;
   font-size: 1.5rem;
+  color: $font-dark-gray;
 
   li {
     padding-left: 1.5rem;
