@@ -1,8 +1,4 @@
-$bg-base: #37d4ff;
-$font-color: #303030;
-$shadow-pink: rgb(215, 78, 122);
-$font-label: "Bebas Neue", sans-serif;
-$font-base: "Arial", sans-serif;
+@import "../../../styles.scss";
 
 .about-container {
   display: grid;
@@ -13,10 +9,10 @@ $font-base: "Arial", sans-serif;
   margin: 0 auto;
 
   h1 {
+    color: $font-dark-gray;
     font-family: $font-label;
     font-size: 2.2rem;
     font-weight: 400;
-    color: $font-color;
     // white vertical line
     border-left: 4px solid #ffffff;
     padding: 0 8px;
@@ -37,6 +33,7 @@ $font-base: "Arial", sans-serif;
 }
 
 button {
+  color: $font-dark-gray;
   font-family: $font-label;
   font-size: 1.7rem;
   border-radius: 3px;
@@ -67,9 +64,9 @@ button {
     flex-wrap: wrap;
     gap: 1rem;
     list-style: none;
+    color: $font-dark-gray;
     font-family: $font-label;
     font-size: 1.4rem;
-    color: $font-color;
 
     li {
       text-align: center;
