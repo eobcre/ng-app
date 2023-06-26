@@ -1,6 +1,86 @@
 $bg-base: #37d4ff;
+$font-color: #303030;
+$shadow-pink: rgb(215, 78, 122);
+$font-title: "Bebas Neue", sans-serif;
+$font-base: "Arial", sans-serif;
 
 .about-container {
-  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   background-color: $bg-base;
+  height: auto;
+  padding: 4rem 2.5rem;
+  margin: 0 auto;
+
+  h1 {
+    font-family: $font-title;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: $font-color;
+    // white vertical line
+    border-left: 4px solid #ffffff;
+    padding: 0 8px;
+  }
+
+  p {
+    font-family: $font-base;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+}
+
+.inner-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+button {
+  font-family: $font-title;
+  font-size: 1.7rem;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px 2px $shadow-pink;
+  margin-top: 2rem;
+  padding: 4px 30px;
+
+  &:hover {
+    color: $shadow-pink;
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
+}
+
+/* skills */
+.skill-container {
+  margin-top: 4rem;
+}
+
+.skill-inner-container {
+  margin-top: 2rem;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    font-family: $font-title;
+    font-size: 1.4rem;
+    color: $font-color;
+
+    li {
+      text-align: center;
+      border-radius: 3px;
+      padding: 0.5rem;
+      width: 8rem;
+    }
+  }
+}
+
+/* md */
+@media (min-width: 800px) {
+  .skill-container {
+    margin-top: 0;
+  }
 }
