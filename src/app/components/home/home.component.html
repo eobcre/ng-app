@@ -1,8 +1,43 @@
 <div class="home-container">
   <app-header></app-header>
   <div class="home-inner">
-    <h1>Emmy Manning</h1>
-    <p>Love to build creative and magical things</p>
+    <div class="my-card glass">
+      <h4>Hi, I'm</h4>
+      <h1>Emmy Manning</h1>
+      <p>Front-end Developer | Beaver, PA</p>
+      <div class="icon-container">
+        <a
+          href="https://www.linkedin.com/in/emmymanning/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <fa-icon
+            [icon]="faLinkedin"
+            size="3x"
+            class="icon-linkedin"
+          ></fa-icon>
+        </a>
+
+        <a
+          href="https://www.instagram.com/emanning.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <fa-icon
+            [icon]="faInstagram"
+            size="3x"
+            class="icon-instagram"
+          ></fa-icon>
+        </a>
+
+        <a
+          href="https://github.com/eobcre"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <fa-icon [icon]="faGithub" size="3x" class="icon-github"></fa-icon>
+        </a>
+      </div>
+    </div>
   </div>
-  <div class="card glass"></div>
 </div>
